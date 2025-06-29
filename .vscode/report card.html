@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>My Personal Webpage</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f8f9;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+    h1,h2{
+        color: #006d77;
+    }
+    ul, ol{
+        background-color: #e0f7fa;
+        padding: 15px;
+        border-radius: 5px;
+        max-width: 400px;
+    }
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    table th, table td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 400px;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px 15px;
+        background-color: #006d77;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #00565c;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>\
+    <h1>Welcome to My Webpage</h1>
+
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Hiking</li>
+      <li>Photography</li>
+      <li>Cooking</li>
+      <li>Traveling</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Top 5 Goals</h2>
+    <ol>
+      <li>Become a full-stack developer</li>
+      <li>Travel to 10 countries</li>
+      <li>Write a technical blog</li>
+      <li>Run a half marathon</li>
+      <li>Learn a new language</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>My Weekly Schedule</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+        <th>Evening</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>Workout</td>
+        <td>Work/Study</td>
+        <td>Reading</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Jogging</td>
+        <td>Work</td>
+        <td>Online Course</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Meditation</td>
+        <td>Work</td>
+        <td>Project Work</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Gym</td>
+        <td>Meetings</td>
+        <td>Netflix</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Workout</td>
+        <td>Wrap up work</td>
+        <td>Hang out</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>Rest</td>
+        <td>Travel</td>
+        <td>Dinner Out</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>Walk</td>
+        <td>Hobbies</td>
+        <td>Plan Week</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="/submit-contact" method="POST">
+      <label for="contact-name">Name:</label>
+      <input type="text" id="contact-name" name="name" required>
+
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" name="email" required>
+
+      <label for="contact-message">Message:</label>
+      <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>

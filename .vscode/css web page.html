@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Semantic Page</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header, nav, main, footer {
+                padding: 1em;
+            }
+            header {
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            nav {
+                background-color: #333;
+                color: white;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+            }
+            section {
+                flex: 1 1 45%;
+                background-color: #f9f9f9;
+                padding: 1em;
+                border: 1px solid #ddd;
+            }
+            footer {
+                background-color: #222;
+                color: white;
+                text-align: center;
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Website</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Section 1</h2>
+                <p>This is the firts section of the main content.</p>
+            </section>
+            <section>
+                <h2>Section 2</h2>
+                <P>This is the second of the main content</P>
+            </section>
+        </main>
+        <footer>
+            <P>&copy; 2025 My website. All rights reserved.</P>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 3: Accessible Semantic Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      padding: 0 1rem;
+    }
+    header, nav, section, footer {
+      margin-bottom: 2rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav li a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: #0066cc;
+      color: white;
+      border-radius: 4px;
+    }
+    form {
+      max-width: 400px;
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .custom-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .custom-button:focus {
+      outline: 3px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Day 3: Accessibility & Semantics</h1>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#form">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>Learn how to build accessible, semantic websites using HTML.</p>
+      <img src="html5-logo.png" alt="HTML5 logo with orange background" width="200">
+    </section>
+
+    <section id="content">
+      <article>
+        <h2>Why Semantic HTML Matters</h2>
+        <p>Semantic HTML helps screen readers and browsers understand the structure of your content.</p>
+        <img src="semantic-elements.png" alt="Diagram showing semantic HTML tags like header, nav, section" width="400">
+      </article>
+
+      <article>
+        <h3>ARIA Roles (Bonus)</h3>
+        <p>ARIA roles can enhance accessibility on non-semantic elements.</p>
+        <div tabindex="0" role="button" class="custom-button" onclick="alert('Custom button clicked!')" onkeypress="if(event.key==='Enter'){this.click()}">
+          Custom ARIA Button
+        </div>
+      </article>
+    </section>
+
+    <section id="form">
+      <h2>Contact Us</h2>
+      <form aria-label="Contact form">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Day 3 Web Workshop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
